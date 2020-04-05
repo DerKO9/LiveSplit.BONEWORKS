@@ -25,9 +25,6 @@ namespace LiveSplit.BONEWORKS
 
         public Version Version => Assembly.GetExecutingAssembly().GetName().Version;
 
-        public IComponent Create(LiveSplitState state)
-        {
-            return new BoneworksComponent();
-        }
+        public IComponent Create(LiveSplitState state){ return new BoneworksComponent(state); }
     }
 }
