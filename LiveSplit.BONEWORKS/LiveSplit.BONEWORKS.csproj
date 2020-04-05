@@ -35,6 +35,10 @@
     <Reference Include="LiveSplit.Core">
       <HintPath>..\..\LiveSplit\LiveSplit\bin\Debug\LiveSplit.Core.dll</HintPath>
     </Reference>
+    <Reference Include="SpeedrunComSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\LiveSplit\LiveSplit\bin\Debug\Components\SpeedrunComSharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -56,6 +60,11 @@
     <Compile Include="BoneworksComponent.cs" />
     <Compile Include="BoneworksFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BONEWORKSSettings.resx">
+      <DependentUpon>BoneworksSettings.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
